@@ -1,0 +1,45 @@
+{
+    "pageSetup": 
+    {
+        "width": "33.86cm",
+        "height": "19.05cm",
+        "margin-top": "2mm",
+        "margin-bottom": "2mm",
+        "margin-left": "5mm",
+        "margin-right": "5mm",
+        "margin-gutter": "0cm",
+        "spacing-header": "2mm",
+        "spacing-footer": "2mm",
+        "firstTemplate": "coverPage"
+    },
+    "pageTemplates":
+    {
+        "coverPage":
+        {
+            "frames": [["0cm", "0cm", "100%", "100%"]],
+            "background": "images/background.pdf",
+            "showHeader": true,
+            "showFooter": true
+        },
+        "cutePage":
+        {
+            "frames": [["0%", "0%", "100%", "100%"]],
+            "showHeader" : true,
+            "showFooter" : true,
+            "defaultFooter" : "###Page###",
+            "defaultHeader" : "###Section###",
+            "background": "images/background.pdf"
+        }
+    },
+    "styles":
+    [
+        [
+            "headerwhite",
+            {
+                "parent": "normal",
+                "textColor": white
+            }
+        ]
+   ]
+}
+
