@@ -3,8 +3,8 @@
     {
         "width": "33.86cm",
         "height": "19.05cm",
-        "margin-top": "10mm",
-        "margin-bottom": "10mm",
+        "margin-top": "8mm",
+        "margin-bottom": "0mm",
         "margin-left": "5mm",
         "margin-right": "5mm",
         "margin-gutter": "0cm",
@@ -18,19 +18,27 @@
         {
             "frames": [["0cm", "0cm", "100%", "100%"]],
             "background": "images/background.pdf",
-            "showHeader": true,
+            "showHeader": false,
             "showFooter": true
         },
         "cutePage":
         {
             "frames": [["0%", "0%", "100%", "100%"]],
-            "showHeader" : true,
+            "showHeader" : false,
             "showFooter" : true,
             "background": "images/background.pdf"
         }
     },
     "styles":
     [
+#        [
+#            "heading1",
+#            {
+#                "parent": "normal",
+#                "textColor": red,
+#                "alignment": TA_CENTER
+#            }
+#        ],
         [
             "textwhite",
             {

@@ -14,4 +14,4 @@ Python Basicks Trainig
 
    PageBreak cutePage
 
-.. include:: slides.rst
+.. include:: coding_convention.rst

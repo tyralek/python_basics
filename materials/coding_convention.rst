@@ -1,6 +1,5 @@
-
-Introduction
-============
+Python Codinc Conventions
+=========================
 
 This document explains how to use rst2pdf. Here is the very short version::
 
