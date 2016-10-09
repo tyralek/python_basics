@@ -1,5 +1,6 @@
 
-SRC = slides.rst
+SRC = main.rst
+OUT = python_basics.pdf
 
 all:
-	rst2pdf ${SRC} -o slides.pdf -s slides.style
+	rst2pdf ${SRC} -s slides.style -b 1 -o ${OUT}

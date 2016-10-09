@@ -3,8 +3,8 @@
     {
         "width": "33.86cm",
         "height": "19.05cm",
-        "margin-top": "2mm",
-        "margin-bottom": "2mm",
+        "margin-top": "10mm",
+        "margin-bottom": "10mm",
         "margin-left": "5mm",
         "margin-right": "5mm",
         "margin-gutter": "0cm",
@@ -26,18 +26,16 @@
             "frames": [["0%", "0%", "100%", "100%"]],
             "showHeader" : true,
             "showFooter" : true,
-            "defaultFooter" : "###Page###",
-            "defaultHeader" : "###Section###",
             "background": "images/background.pdf"
         }
     },
     "styles":
     [
         [
-            "headerwhite",
+            "textwhite",
             {
                 "parent": "normal",
-                "textColor": white
+                "textColor": red
             }
         ]
    ]
