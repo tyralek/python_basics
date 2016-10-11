@@ -10,7 +10,7 @@
         "margin-gutter": "0cm",
         "spacing-header": "2mm",
         "spacing-footer": "2mm",
-        "firstTemplate": "coverPage"
+        "firstTemplate": "twoColumn"
     },
     "pageTemplates":
     {
@@ -21,9 +21,17 @@
             "showHeader": false,
             "showFooter": true
         },
-        "cutePage":
+        "oneColumn":
         {
-            "frames": [["0%", "0%", "100%", "100%"]],
+            "frames": [[0cm, 0cm, 100%, 100%]],
+            "showHeader" : false,
+            "showFooter" : true,
+            "background": "images/background.pdf"
+        },
+        "twoColumn":
+        {
+            frames: [[0cm, 0cm, 49%, 100%],
+                     [51%, 0cm, 49%, 100%]],
             "showHeader" : false,
             "showFooter" : true,
             "background": "images/background.pdf"
@@ -31,6 +39,13 @@
     },
     "styles":
     [
+        [
+            "normal",
+            {
+                "parent": "base",
+                "fontSize": 14
+            }
+        ],
 #        [
 #            "heading1",
 #            {

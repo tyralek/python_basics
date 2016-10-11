@@ -1,4 +1,8 @@
-Python Codinc Conventions
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+Python Coding Conventions
 =========================
 
 This document explains how to use rst2pdf. Here is the very short version::

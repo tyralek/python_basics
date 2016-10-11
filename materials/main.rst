@@ -10,8 +10,6 @@ Python Basicks Trainig
 
 .. section-numbering::
 
-.. raw:: pdf
-
-   PageBreak cutePage
-
 .. include:: coding_convention.rst
+.. include:: virtual_env.rst
+.. include:: pypi.rst
