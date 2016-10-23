@@ -5,9 +5,14 @@
 Python Virtual Environment
 ==========================
 
+What it is
+----------
+
 - A Virtual Environment is a tool to keep the dependencies required by different projects in separate places.
-- “Project X depends on module version 1.x but, Project Y needs 4.x” 
+- When Project "A" depends on module version "1.x" but, Project "B" needs "4.x” 
 - It keeps  your global site-packages directory clean and manageable.
+
+| 
 
 .. code-block:: tcsh
 
@@ -17,6 +22,18 @@ Python Virtual Environment
 
    # create new environment
    $ python3.5 -m venv training
+
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+Use it
+------
+
+| 
+
+.. code-block:: tcsh
 
    # use it
    $ source training/bin/activate
@@ -32,6 +49,17 @@ Python Virtual Environment
        100% |████████████████████████████████| 15.6MB 97kB/s 
    Installing collected packages: numpy
    Successfully installed numpy-1.11.2
+
+.. raw:: pdf
+
+   PageBreak oneColumn
+
+Reuse
+-----
+
+| 
+
+.. code-block:: tcsh
 
    # save your local environment state
    (training) $ pip freeze --local > requirements.txt
@@ -51,5 +79,3 @@ Python Virtual Environment
    (training) $ deactivate
    $ which python
    /usr/bin/python
-
-

@@ -2,15 +2,18 @@
 
    PageBreak oneColumn
 
-Python Package Indexer
-======================
+PyPI - the Python Package Index
+===============================
 
-aaa
+
+The Python Package Index is a repository of software for 
+the Python programming language. 
 
 .. code-block:: tcsh
 
-   $ pip list
-   $ pip install requests
-   $ pip search xml
-   $ pip show beautifulsoup4
-   $ pip uninstall requests 
+   $ python3.4 -m pip list
+   $ python3.4 -m pip install requests
+   $ python3.4 -m pip search xml
+   $ python3.4 -m pip show numpy
+   $ python3.4 -m pip uninstall requests
+   
