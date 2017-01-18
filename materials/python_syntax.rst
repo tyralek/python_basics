@@ -27,8 +27,8 @@ Hello Word - right way
 
    PageBreak oneColumn
 
-Syntax
-------
+Comments and Strings
+--------------------
 
 Comment
 

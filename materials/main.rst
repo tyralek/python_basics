@@ -17,6 +17,7 @@ Python Basicks Trainig
 .. include:: virtual_env.rst
 .. include:: coding_convention.rst
 .. include:: python_syntax.rst
+.. include:: raii.rst
 
 
 ..
@@ -29,7 +30,6 @@ Python Basicks Trainig
    .. include:: iterators.rst
    .. include:: class.rst
    .. include:: inheritance.rst
-   .. include:: raii.rst
    .. include:: modules.rst
 
 .. DAY 3
