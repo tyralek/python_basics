@@ -16,9 +16,11 @@ Python Basicks Trainig
 .. include:: pypi.rst
 .. include:: virtual_env.rst
 .. include:: coding_convention.rst
-.. include:: python_syntax.rst
-.. include:: raii.rst
+.. include:: pylint.rst
 
+..
+   .. include:: python_syntax.rst
+   .. include:: raii.rst
 
 ..
    .. include:: eclipse.rst
