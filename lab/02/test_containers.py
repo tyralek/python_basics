@@ -45,7 +45,7 @@ class Test(unittest.TestCase):
         self.assertEqual([1, 2, 3, 4, 5], self.list)
 
         # add 0 at list beginning
-        self.list.insert(0, 0)
+        self.list
         self.assertEqual([0, 1, 2, 3, 4, 5], self.list)
 
         # add new_list at the end
@@ -69,7 +69,7 @@ class Test(unittest.TestCase):
         self.assertTrue(isinstance(test_tuple, tuple))
         self.assertTrue(test_tuple == (1, 2, 3, 4))
 
-    def dict_access(self):
+    def test_dict_access(self):
         # add hero: spiderman with rating 7
         self.assertTrue('spiderman' in self.flight_rating)
 
@@ -80,11 +80,12 @@ class Test(unittest.TestCase):
         self.assertEqual(10, best_value)
 
         # remove superman from list
-        self.assertEqual(0, self.flight_rating.get('superman', default=0))
+        self.assertEqual(0, self.flight_rating.get('superman', 0))
 
         # get current hero list
         hero_list = []
-        self.assertEqual(['batman', 'superman', 'zorro'], hero_list.sort())
+        hero_list.sort()
+        self.assertEqual(['batman', 'spiderman', 'zorro'], hero_list)
 
 
 if __name__ == "__main__":
