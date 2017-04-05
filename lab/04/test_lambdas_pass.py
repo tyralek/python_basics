@@ -42,7 +42,7 @@ class Test(unittest.TestCase):
         self.assertEqual(self.lmbd.find_greater(7, my_int_list, self.cmp_int), 8)
         self.assertEqual(self.lmbd.find_greater(9, my_int_list, self.cmp_int), None)
 
-        # find first tuple in list, where both elements are greater that in given tuple
+        # find first tuple in list, where both elements are greater than in given tuple
         # order in tuple doesn't matter
         my_tuple_list = [ (3, 4), (3, 10), (45, 2), (28, 28), (-1, 192) ]
         self.assertEqual(self.lmbd.find_greater((1, 1), my_tuple_list, self.cmp_tuple), (3, 4))
