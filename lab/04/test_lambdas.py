@@ -43,6 +43,46 @@ class Test(unittest.TestCase):
         self.assertEqual(self.lmbd.find_greater((9, 2), my_tuple_list, self.cmp_tuple), (3, 10))
         self.assertEqual(self.lmbd.find_greater((190, -3), my_tuple_list, self.cmp_tuple), (-1, 192))
 
+    def test_smple_map(self):
+        items = [2, 6, 18, -5]
+        sqr_lmbd = lambda
+        # sqr = items ** 2 using map and sqr_lmbd
+        sqr = list
+        self.assertEqual(sqr, [4, 36, 324, 25])
+
+    def test_complex_map(self):
+        items = [(2, 3), (3, 3), (4, -1), (-2, 0)]
+        # using maps and
+        # using lambdas mul and self.power
+        # for each tuple in itmes
+        # count multiplications and power and
+        # prepare new list of tuples with results
+        # ex.:
+        # items = [ (a, b), (c, d) ]
+        # result = [ ( a * b, a ** b), (c * d, c ** d) ]
+        mul = lambda
+        result = []
+        for i in items:
+            result.append(tuple(map))
+        self.assertEqual(result, [(6, 8), (9, 27), (-4, 0.25), (0, 1)])
+
+    def test_filter(self):
+        items = range(-10, 20)
+        # using filter and lmbd find numbers not divided by 2 and 3 in items
+        lmbd = lambda
+        result = list
+        self.assertEqual(result, [-7, -5, -1, 1, 5, 7, 11, 13, 17, 19])
+
+    def test_reduce(self):
+        items = range(0, 100)
+        # using lambdas and reduce find sum of odd and even numbers in items
+        sum_even = lambda
+        sum_odd = lambda
+        result_even = 0
+        result_odd = 0
+        self.assertEqual(result_even, 2450)
+        self.assertEqual(result_odd, 2500)
+
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()
