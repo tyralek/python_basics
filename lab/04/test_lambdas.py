@@ -5,17 +5,17 @@ Lambda exercise
 '''
 import unittest
 
-__mul__ = lambda
+__mul__ = lambda : None
 
 class Lambdas:
-    add = lambda
-    find_greater = lambda
+    add = lambda : None
+    find_greater = lambda : None
 
 class Test(unittest.TestCase):
 
-    power = lambda
-    cmp_int = lambda
-    cmp_tuple = lambda
+    power = lambda : None
+    cmp_int = lambda : None
+    cmp_tuple = lambda : None
 
     def setUp(self):
         self.lmbd = Lambdas()
@@ -45,7 +45,7 @@ class Test(unittest.TestCase):
 
     def test_smple_map(self):
         items = [2, 6, 18, -5]
-        sqr_lmbd = lambda
+        sqr_lmbd = lambda : None
         # sqr = items ** 2 using map and sqr_lmbd
         sqr = list
         self.assertEqual(sqr, [4, 36, 324, 25])
@@ -60,7 +60,7 @@ class Test(unittest.TestCase):
         # ex.:
         # items = [ (a, b), (c, d) ]
         # result = [ ( a * b, a ** b), (c * d, c ** d) ]
-        mul = lambda
+        mul = lambda : None
         result = []
         for i in items:
             result.append(tuple(map))
@@ -69,15 +69,15 @@ class Test(unittest.TestCase):
     def test_filter(self):
         items = range(-10, 20)
         # using filter and lmbd find numbers not divided by 2 and 3 in items
-        lmbd = lambda
+        lmbd = lambda : None
         result = list
         self.assertEqual(result, [-7, -5, -1, 1, 5, 7, 11, 13, 17, 19])
 
     def test_reduce(self):
         items = range(0, 100)
         # using lambdas and reduce find sum of odd and even numbers in items
-        sum_even = lambda
-        sum_odd = lambda
+        sum_even = lambda : None
+        sum_odd = lambda: None
         result_even = 0
         result_odd = 0
         self.assertEqual(result_even, 2450)
