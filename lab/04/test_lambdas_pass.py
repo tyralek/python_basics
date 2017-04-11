@@ -61,17 +61,15 @@ class Test(unittest.TestCase):
     def test_complex_map(self):
         items = [(2, 3), (3, 3), (4, -1), (-2, 0)]
         # using lambdas mul and self.power
-        # for each tuple in itmes 
-        # count multiplications and power and 
+        # for each tuple in itmes
+        # count multiplications and power and
         # prepare new list of tuples with results
         # ex.:
         # items = [ (a, b), (c, d) ]
         # result = [ ( a * b, a ** b), (c * d, c ** d) ]
         mul = lambda a, b: a * b
         func = [mul, self.power]
-        result = []
-        for i in items:
-            result.append(tuple(map(lambda x: x(i[0], i[1]), func)))
+        result = [tuple(map(lambda x: x(i[0], i[1]), func)) for i in items]
         self.assertEqual(result, [(6, 8), (9, 27), (-4, 0.25), (0, 1)])
 
     def test_filter(self):
