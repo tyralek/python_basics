@@ -30,16 +30,15 @@ class tic_tac_toe:
 
         column  = self.__letter_to_column(field[0])
         row = self.__number_to_row(field[1])
+        if self.__board[row][column] != 0:
+            return False
         if self.__x == 1:
             put = 'x'
             self.__x = 0
         else:
             put = 'o'
             self.__x = 1
-        if self.__board[row][column] == 0:
-            self.__board[row][column] = put
-        else:
-            return False
+        self.__board[row][column] = put
 
         # check winner
         self.__winner = self.__check_column(column)
@@ -78,6 +77,11 @@ class tic_tac_toe:
     def winner_is(self):
         return self.__winner
 
+    def now_move(self):
+        if self.__x == 0:
+            return 'o'
+        return 'x'
+
 class Display:
     def __init__(self):
         self.__display = \
@@ -106,15 +110,14 @@ if __name__ == "__main__":
     my_ttt = tic_tac_toe()
     my_display = Display()
     my_display.show()
-    nb = input("Your move:")
-    print("Chosse {}".format(nb))
-    my_ttt.put('a1')
-    my_ttt.put('a2')
-    my_ttt.put('a3')
-    my_ttt.put('b1')
-    my_ttt.put('c1')
-    my_ttt.put('b2')
-    my_ttt.put('c2')
-    my_ttt.put('c3')
-    my_ttt.put('b3')
-    my_display.show(my_ttt)
+    while (my_ttt.winner_is() == 0):
+        move = input("Choose move for {} (a1 - c3): ".format(my_ttt.now_move()))
+        print("\n")
+        if my_ttt.put(move):
+            my_display.show(my_ttt)
+        else:
+            print("You can't put {} in {}\n".format(move, my_ttt.now_move()))
+    if (my_ttt.winner_is()):
+        print("The winner is: {}\n".format(my_ttt.winner_is()))
+    else:
+        print("No one is the winner.\n")
