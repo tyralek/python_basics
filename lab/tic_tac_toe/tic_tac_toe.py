@@ -110,11 +110,13 @@ if __name__ == "__main__":
     my_ttt = tic_tac_toe()
     my_display = Display()
     my_display.show()
-    while (my_ttt.winner_is() == 0):
+    move_cnt = 0
+    while (my_ttt.winner_is() == 0 and move_cnt < 9):
         move = input("Choose move for {} (a1 - c3): ".format(my_ttt.now_move()))
         print("\n")
         if my_ttt.put(move):
             my_display.show(my_ttt)
+            move_cnt += 1
         else:
             print("You can't put {} in {}\n".format(move, my_ttt.now_move()))
     if (my_ttt.winner_is()):
