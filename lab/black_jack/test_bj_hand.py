@@ -52,7 +52,33 @@ class Test(unittest.TestCase):
         self.assertEqual(uut_hand.sum, 30)
         uut_hand.reset()
         self.assertTrue(uut_hand.add_card('As'))
+        self.assertEqual(uut_hand.sum, 11)
+        for i in range(21):
+            self.assertTrue(uut_hand.add_card('As'))
+            self.assertEqual(uut_hand.sum, 2 + i)
+        self.assertFalse(uut_hand.add_card('As'))
+        self.assertEqual(uut_hand.sum, 22)
+        uut_hand.reset()
+        self.assertTrue(uut_hand.add_card('Kd'))
         self.assertEqual(uut_hand.sum, 10)
+        self.assertTrue(uut_hand.add_card('As'))
+        self.assertEqual(uut_hand.sum, 21)
+        for i in range(11):
+            self.assertTrue(uut_hand.add_card('As'))
+            self.assertEqual(uut_hand.sum, 12 + i)
+        self.assertFalse(uut_hand.add_card('As'))
+        self.assertEqual(uut_hand.sum, 22)
+        uut_hand.reset()
+        self.assertTrue(uut_hand.add_card('Qc'))
+        self.assertEqual(uut_hand.sum, 10)
+        self.assertTrue(uut_hand.add_card('4s'))
+        self.assertEqual(uut_hand.sum, 14)
+        for i in range(8):
+            self.assertTrue(uut_hand.add_card('As'))
+            self.assertEqual(uut_hand.sum, 15 + i)
+        self.assertFalse(uut_hand.add_card('As'))
+        self.assertEqual(uut_hand.sum, 22)
+
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
