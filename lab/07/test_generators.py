@@ -6,7 +6,7 @@ Created on May 12, 2017
 import unittest
 from datetime import datetime, timedelta
 from timeit import default_timer as timer
-from _collections_abc import generator
+from collections import Generator
 
 class WorkingDayGenerator:
     '''
@@ -88,7 +88,7 @@ class Test(unittest.TestCase):
         self.assertTrue(timer() - start < 1)
     
     def test_generator_element_type(self):
-        self.assertTrue(isinstance(gen_dates(), generator))
+        self.assertTrue(isinstance(gen_dates(), Generator))
 
 
 if __name__ == "__main__":
